@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'vk_lang_model.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'people',
+        'NAME': 'vk_lang_model',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'USER': 'root',
