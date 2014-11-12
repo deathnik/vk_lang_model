@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VK Lang Model</title>
+    <link rel="stylesheet" href={% static "/static/bootstrap/3.2.0/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "/static/bootstrap/3.2.0/css/bootstrap-theme.min.css" %}>
+    <link rel="stylesheet" href={% static "/static/bootstrap/3.2.0/css/bootstrap-glyphicons.css" %}>
+    <script src={% static "/static/jquery/1.11.1/jquery.min.js" %}></script>
+    <script src={% static "/static/bootstrap/3.2.0/bootstrap.min.js" %}></script>
+    <script src={% static "/static/bootstrap/bootstrap-modal.js" %}></script>
+</head>
+<body>
+<div class="jumbotron">
+     {% block page %}{% endblock %}
+</div>
+{% block code%}{% endblock %}
+
+</body>
+</html>
+
+

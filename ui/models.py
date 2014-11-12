@@ -33,3 +33,9 @@ class PersonLangModel(models.Model):
     person = models.ForeignKey(Person)
     #zipped pickled object
     data = models.TextField()
+
+
+class KeyValueEntry(models.Model):
+    group = models.CharField(db_index=True, max_length=INDEX_FIELD_LENGTH)
+    key = models.CharField(db_index=True, max_length=INDEX_FIELD_LENGTH)
+    value = models.TextField()

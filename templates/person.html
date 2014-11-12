@@ -1,0 +1,11 @@
+{% extends "view_wrapper.html" %}
+{% block page %}
+    <div id="person info">
+        {{ person.firstName }}{{ person.lastName }}
+        {% if person.lastName == 'gin' %}
+            Hello Gin!
+        {% endif %}
+        <button align='left' class="btn show_cert">Hello</button>
+    </div>
+
+{% endblock %}

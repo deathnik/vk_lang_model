@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Creating MySQL db"
-mysql -uroot -padmin < create_sql_db.sql
+mysql -uvk_lang_model -pvk_lang_model < create_sql_db.sql
 
 echo "Creating initial tables"
 python ../manage.py syncdb

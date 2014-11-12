@@ -68,8 +68,8 @@ DATABASES = {
         'NAME': 'vk_lang_model',
         'HOST': '127.0.0.1',
         'PORT': '3306',
-        'USER': 'root',
-        'PASSWORD': 'admin'
+        'USER': 'vk_lang_model',
+        'PASSWORD': 'vk_lang_model'
     }
 }
 
