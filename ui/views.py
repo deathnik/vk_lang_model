@@ -5,4 +5,8 @@ from ui.models import Person
 
 
 def render_person(request, vk_id):
-    return render(request, 'person.html', {'person': Person.objects.filter(vk_id=vk_id)[0]})
+    persons = Person.objects.filter(vk_id=vk_id);
+    if len(persons) == 0:
+        return render(request, 'not-found.html')
+    return render(request, 'person.html', {'person': persons[0]})
+    
